@@ -7,11 +7,11 @@
 }
 @font-face {
   font-family: Norse;
-  src: url(/Fonts/Norse.otf);
+  src: url(../Fonts/Norse.otf);
 }
 @font-face {
   font-family: Norse-bold;
-  src: url(/Fonts/Norse-Bold.otf);
+  src: url(../Fonts/Norse-Bold.otf);
 }
 
 body {
