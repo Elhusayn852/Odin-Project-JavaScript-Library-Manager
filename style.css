@@ -1,0 +1,149 @@
+:root {
+  --primaryColor: #e3b35f;
+  --secondaryColor: #00786f;
+  --neturalColor: #f9fafb;
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@font-face {
+  font-family: Norse;
+  src: url(/Fonts/Norse.otf);
+}
+@font-face {
+  font-family: Norse-bold;
+  src: url(/Fonts/Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.library-title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  color: var(--primaryColor);
+  filter: drop-shadow(-1px 1px 0px #000000);
+}
+.library-title > h1 {
+  font-family: Norse-bold;
+  font-size: 128px;
+  margin-top: 10vh;
+}
+svg {
+  width: 100px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+}
+.library-content > caption {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--neturalColor);
+}
+th,
+td,
+tr {
+  border: 1px solid #00000023;
+  padding: 10px;
+}
+thead {
+  background-color: #e5e5e5;
+  border: 1px solid #00000023;
+}
+thead > tr > th:hover {
+  background-color: var(--primaryColor);
+}
+thead > tr > th {
+  padding: 10px;
+}
+tbody > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody > tr {
+  cursor: pointer;
+}
+tbody > tr:hover {
+  background-color: var(--primaryColor);
+}
+tbody > tr > td:last-child {
+  text-align: center;
+}
+.addbookbtn {
+  border: 1px solid #00000023;
+  background-color: var(--neturalColor);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.addbookbtn:hover {
+  color: var(--neturalColor);
+  background-color: var(--primaryColor);
+}
+.hidden {
+  display: none;
+}
+#form-overlay {
+  position: fixed;
+  background-color: var(--neturalColor);
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.floating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+.floating-form > h2 {
+  margin: 0;
+}
+.floating-form > input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00000023;
+}
+input:focus {
+  outline: 2px solid var(--primaryColor);
+}
+.form-buttons > button {
+  border: 1px solid #00000023;
+  background-color: var(--neturalColor);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.form-buttons > button:hover {
+  color: var(--neturalColor);
+  background-color: var(--primaryColor);
+}
+.substituted:focus {
+  outline: none;
+}
+#close-form-btn:hover {
+  background-color: #e35f5f;
+}

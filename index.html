@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+    <title>Book Library</title>
+  </head>
+  <body>
+    <div class="library-title">
+      <h1>The Odin Library</h1>
+    </div>
+    <table class="library-content">
+      <caption>
+        Available Books Table
+      </caption>
+      <thead>
+        <tr>
+          <th>Book</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>ISBN</th>
+          <th>Read status</th>
+        </tr>
+      </thead>
+      <tbody class="table-body" id="table-body"></tbody>
+    </table>
+    <button id="addbookbtn" class="addbookbtn">Add A Book</button>
+    <div class="hidden" id="form-overlay">
+      <form id="book-form" class="floating-form">
+        <h2>Add New Book</h2>
+        <input name="title" placeholder="Title" required />
+        <input name="author" placeholder="Author" required />
+        <input name="pages" type="number" placeholder="Pages" required />
+        <input name="isbn" placeholder="ISBN" required />
+        <label> <input type="checkbox" name="read" /> Read? </label>
+        <div class="form-buttons">
+          <button id="submit-addbook" type="submit">Add Book</button>
+          <button type="button" id="close-form-btn" class="cancel-btn">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
