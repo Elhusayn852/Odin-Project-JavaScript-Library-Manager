@@ -2,7 +2,7 @@
 const bookContainer = document.querySelector("#table-body");
 
 function Book(title, author, pages, isbn, read) {
-  this.id = crypto.randomUUID;
+  this.id = crypto.randomUUID();
   this.title = title;
   this.author = author;
   this.pages = pages;
